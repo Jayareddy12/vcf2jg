@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vcf2jg"
+version = "0.1.0"
+description = "Convert Synopsys VC Formal Tcl scripts to Cadence JasperGold Tcl"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { text = "MIT" }
+authors = [{ name = "vcf2jg contributors" }]
+keywords = ["formal", "verification", "jaspergold", "vc-formal", "tcl"]
+
+[project.scripts]
+vcf2jg = "vcf2jg.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["vcf2jg*"]
